@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>StarBucks</title>
+	<meta charset="UTF-8">
+	<!-- Не обов'язковий мета-тег для ІЕ (Internet Explorer) та його версії (Edge (можливі також версії  ..., IE8, IE9, IE10, IE11)) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230115131251">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- Кодування сторінки: ширина області перегляду така ж, як і ширина екрану; зум за замовчуванням 100%; заборона масштабувати контент користувачу -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="ТУТ ВКАЗУЄМО КЛЮЧОВІ СЛОВА ДЛЯ ПОШУКОВИХ СИСТЕМ">
+	<meta name="description" content="ТУТ КОРОТКИЙ ОПИС-ПРИЗНАЧЕННЯ СТОРІНКИ">
+	<meta name="author" content="АВТОР">
+</head>
+
+<body>
+	<div class="preloader">
+		<svg class="preloader__image" role="img" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<div class="cursor"></div>
+		<div class="wrapper__decor">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<header data-scroll-show class="header">
+			<div class="header__container">
+				<div class='header__menu menu'>
+					<button type='button' class='menu__icon icon-menu'> <span></span></button>
+					<div class="menu__logo">StarBucks</div>
+					<nav class='menu__body'>
+						<ul class='menu__list'>
+							<li class='menu__item'><a href='#' class='menu__link'>Home</a></li>
+							<li class='menu__item'><a href='#' class='menu__link'>Select</a></li>
+							<li class='menu__item'><a href='#' class='menu__link'>Shop</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__new new">
+				<div class="new__container">
+					<div class="new__left">
+						<h2 data-watch="title" class="new__title title">New Cafe by <span class="title-span">StarBucks</span>
+						</h2>
+						<p data-watch="counter" class="new__text text">Have time to buy the most harmonious drinks in the
+							new Starbucks coffee and don't forget about the discount!</p>
+						<div class="new__buttons">
+							<button data-watch="counter" class="new__button button button-green"><span>Select a
+									coffee</span></button>
+							<button data-watch="counter" class="new__button button button-dark"><span>More</span></button>
+						</div>
+						<div class="new__counters counters">
+							<div data-watch="counter" class="counters__item item-counters">
+								<div class="item-counters__top">
+									<div data-digits-counter class="item-counters__value">9</div>
+									<span class="item-counters__k">k</span>
+									<span class="item-counters__plus">+</span>
+								</div>
+								<div class="item-counters__bottom">
+									<p class="item-counters__text text">
+										Premium Users
+									</p>
+								</div>
+							</div>
+							<div data-watch="counter" class="counters__item item-counters">
+								<div class="item-counters__top">
+									<div data-digits-counter class="item-counters__value">2</div>
+									<span class="item-counters__k">k</span>
+									<span class="item-counters__plus">+</span>
+								</div>
+								<div class="item-counters__bottom">
+									<p class="item-counters__text text">
+										Happy Customer
+									</p>
+								</div>
+							</div>
+							<div data-watch="counter" class="counters__item item-counters">
+								<div class="item-counters__top">
+									<div data-digits-counter class="item-counters__value">28</div>
+									<span class="item-counters__plus">+</span>
+								</div>
+								<div class="item-counters__bottom">
+									<p class="item-counters__text text">
+										Awards Winning
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="new__right">
+						<div data-watch="cup" class="new__cup-ibg">
+							<picture><source srcset="img/new/cup.webp" type="image/webp"><img src="img/new/cup.png" alt="cup"></picture>
+							<div data-watch data-watch-threshold="0.9" class="new__star star">
+								<div class="star__box box">
+									<img src="img/star.svg" alt="star">
+								</div>
+								<span class="star__text">45%</span>
+							</div>
+						</div>
+						<div class="new__lines lines">
+							<div class="new__line line ">
+								<svg width="809" height="613">
+									<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m0.99634,612.001l138.57866,-85.674c38.396,-23.737 57.095,-69.533 46.287,-113.361l-7.259,-29.436c-11.731,-47.568 11.328,-96.873 55.356,-118.363l16.519,-8.062c21.974,-10.725 39.466,-28.85 49.404,-51.192l13.928,-31.311c19.481,-43.792 66.368,-68.6 113.533,-60.069l131.245,23.738c45.082,8.154 90.189,-14.153 111.075,-54.9284l13.107,-25.5916c21.151,-41.2946 67.097,-63.58443 112.623,-54.63638l68.103,13.38588" />
+									<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m16.55017,631.62319l138.57866,-85.674c38.396,-23.737 57.095,-69.533 46.287,-113.361l-7.259,-29.436c-11.731,-47.568 11.328,-96.873 55.356,-118.363l16.519,-8.062c21.974,-10.725 39.466,-28.85 49.404,-51.192l13.928,-31.311c19.481,-43.792 66.368,-68.6 113.533,-60.069l131.245,23.738c45.082,8.154 90.189,-14.153 111.075,-54.9284l13.107,-25.5916c21.151,-41.2946 67.097,-63.58443 112.623,-54.63638l68.103,13.38588" />
+									<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m33.55017,650.62318l138.57866,-85.674c38.396,-23.737 57.095,-69.533 46.287,-113.361l-7.259,-29.436c-11.731,-47.568 11.328,-96.873 55.356,-118.363l16.519,-8.062c21.974,-10.725 39.466,-28.85 49.404,-51.192l13.928,-31.311c19.481,-43.792 66.368,-68.6 113.533,-60.069l131.245,23.738c45.082,8.154 90.189,-14.153 111.075,-54.9284l13.107,-25.5916c21.151,-41.2946 67.097,-63.58443 112.623,-54.63638l68.103,13.38588" />
+								</svg>
+								<svg width="809" height="613">
+									<path class="line-black line-black-1" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m0.99634,612.001l138.57866,-85.674c38.396,-23.737 57.095,-69.533 46.287,-113.361l-7.259,-29.436c-11.731,-47.568 11.328,-96.873 55.356,-118.363l16.519,-8.062c21.974,-10.725 39.466,-28.85 49.404,-51.192l13.928,-31.311c19.481,-43.792 66.368,-68.6 113.533,-60.069l131.245,23.738c45.082,8.154 90.189,-14.153 111.075,-54.9284l13.107,-25.5916c21.151,-41.2946 67.097,-63.58443 112.623,-54.63638l68.103,13.38588" />
+									<path class="line-black line-black-2" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m16.55017,631.62319l138.57866,-85.674c38.396,-23.737 57.095,-69.533 46.287,-113.361l-7.259,-29.436c-11.731,-47.568 11.328,-96.873 55.356,-118.363l16.519,-8.062c21.974,-10.725 39.466,-28.85 49.404,-51.192l13.928,-31.311c19.481,-43.792 66.368,-68.6 113.533,-60.069l131.245,23.738c45.082,8.154 90.189,-14.153 111.075,-54.9284l13.107,-25.5916c21.151,-41.2946 67.097,-63.58443 112.623,-54.63638l68.103,13.38588" />
+									<path class="line-black line-black-3" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m33.55017,650.62318l138.57866,-85.674c38.396,-23.737 57.095,-69.533 46.287,-113.361l-7.259,-29.436c-11.731,-47.568 11.328,-96.873 55.356,-118.363l16.519,-8.062c21.974,-10.725 39.466,-28.85 49.404,-51.192l13.928,-31.311c19.481,-43.792 66.368,-68.6 113.533,-60.069l131.245,23.738c45.082,8.154 90.189,-14.153 111.075,-54.9284l13.107,-25.5916c21.151,-41.2946 67.097,-63.58443 112.623,-54.63638l68.103,13.38588" />
+								</svg>
+							</div>
+						</div>
+					</div>
+			</section>
+			<section class="page__we we">
+				<div class="we__container">
+					<div class="we__fild">
+						<div data-watch-threshold="0.5" data-watch="star" class="we__star star">
+							<div class="star__box box">
+								<img src="img/star.svg" alt="star">
+							</div>
+							<span class="star__text">we have</span>
+						</div>
+						<div data-watch="counter" class="we__item item-we">
+							<div class="item-we__top">
+								<div class="item-we__img-ibg">
+									<picture><source srcset="img/we/01.webp" type="image/webp"><img src="img/we/01.png" alt="img"></picture>
+								</div>
+							</div>
+							<div class="item-we__subtitle">Tasty</div>
+							<div class="item-we__text text">We have the most delicious coffee</div>
+						</div>
+						<div data-watch="counter" class="we__item item-we">
+							<div class="item-we__top">
+								<div class="item-we__img-ibg">
+									<picture><source srcset="img/we/02.webp" type="image/webp"><img src="img/we/02.png" alt="img"></picture>
+								</div>
+							</div>
+							<div class="item-we__subtitle">Fast</div>
+							<div class="item-we__text text">Our cafe will serve you quickly</div>
+						</div>
+						<div data-watch="counter" class="we__item item-we">
+							<div class="item-we__top">
+								<div class="item-we__img-ibg">
+									<picture><source srcset="img/we/03.webp" type="image/webp"><img src="img/we/03.png" alt="img"></picture>
+								</div>
+							</div>
+							<div class="item-we__subtitle">Available</div>
+							<div class="item-we__text text">Cafe will serveat the most pleasant prices</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__delicion delicion">
+				<div class="delicion__container">
+					<div class="delicion__left">
+						<div data-watch="star" class="delicion__img-ibg">
+							<picture><source srcset="img/delicions/01.webp" type="image/webp"><img src="img/delicions/01.png" alt="img"></picture>
+						</div>
+						<div data-watch-threshold="0.5" data-watch="star" class="delicion__star star">
+							<div class="star__box box">
+								<img src="img/star.svg" alt="star">
+							</div>
+							<span class="star__text">we have</span>
+						</div>
+					</div>
+					<div class="delicion__right">
+						<h2 data-watch="title" class="delicion__title title">We make <span class="title-span">delicious</span>
+						</h2>
+						<div data-watch="counter" class="delicious__text text">Only in 2021 we have made more than 100,000
+							orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</div>
+						<div class="delicion__video">
+							<div class="delicion__image-ibg">
+								<picture><source srcset="img/delicions/02.webp" type="image/webp"><img src="img/delicions/02.png" alt="img"></picture>
+							</div>
+							<button data-popup="#video" data-popup-youtube="m0u7iM6Xwxw" class="delicion__button button button-green "><span class="_icon-triangle">Cooking
+									Process</span></button>
+						</div>
+					</div>
+					<div class="delicion__lines lines">
+						<div class="delicion__line line ">
+							<svg width="932" height="322">
+								<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m1147.47,321.034l-181.348,-25.206c-48.634,-6.76 -85.914,-46.613 -89.417,-95.589l-1.095,-15.31c-3.76,-52.557 -46.231,-93.9974 -98.864,-96.4656l-28.737,-1.3477c-24.349,-1.1418 -47.523,-10.7998 -65.476,-27.2876l-33.573,-30.8334c-32.937,-30.24861 -81.523,-36.05576 -120.66,-14.4217l-169.05,93.446c-37.144,20.532 -83.038,16.433 -115.957,-10.3549l-38.309,-31.175c-33.305,-27.1033 -79.844,-30.9509 -117.1482,-9.6854l-86.63742,49.3883" />
+								<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m1142.13582,338.92141l-181.348,-25.206c-48.634,-6.76 -85.914,-46.613 -89.417,-95.589l-1.095,-15.31c-3.76,-52.557 -46.231,-93.9974 -98.864,-96.4656l-28.737,-1.3477c-24.349,-1.1418 -47.523,-10.7998 -65.476,-27.2876l-33.573,-30.8334c-32.937,-30.24861 -81.523,-36.05576 -120.66,-14.4217l-169.05,93.446c-37.144,20.532 -83.038,16.433 -115.957,-10.3549l-38.309,-31.175c-33.305,-27.1033 -79.844,-30.9509 -117.1482,-9.6854l-86.63742,49.3883" />
+								<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m1139.13582,361.92141l-181.348,-25.206c-48.634,-6.76 -85.914,-46.613 -89.417,-95.589l-1.095,-15.31c-3.76,-52.557 -46.231,-93.9974 -98.864,-96.4656l-28.737,-1.3477c-24.349,-1.1418 -47.523,-10.7998 -65.476,-27.2876l-33.573,-30.8334c-32.937,-30.24861 -81.523,-36.05576 -120.66,-14.4217l-169.05,93.446c-37.144,20.532 -83.038,16.433 -115.957,-10.3549l-38.309,-31.175c-33.305,-27.1033 -79.844,-30.9509 -117.1482,-9.6854l-86.63742,49.3883" />
+							</svg>
+							<svg width="932" height="322">
+								<path class="line-black line-black-1" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m1147.47,321.034l-181.348,-25.206c-48.634,-6.76 -85.914,-46.613 -89.417,-95.589l-1.095,-15.31c-3.76,-52.557 -46.231,-93.9974 -98.864,-96.4656l-28.737,-1.3477c-24.349,-1.1418 -47.523,-10.7998 -65.476,-27.2876l-33.573,-30.8334c-32.937,-30.24861 -81.523,-36.05576 -120.66,-14.4217l-169.05,93.446c-37.144,20.532 -83.038,16.433 -115.957,-10.3549l-38.309,-31.175c-33.305,-27.1033 -79.844,-30.9509 -117.1482,-9.6854l-86.63742,49.3883" />
+								<path class="line-black line-black-2" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m1142.13582,338.92141l-181.348,-25.206c-48.634,-6.76 -85.914,-46.613 -89.417,-95.589l-1.095,-15.31c-3.76,-52.557 -46.231,-93.9974 -98.864,-96.4656l-28.737,-1.3477c-24.349,-1.1418 -47.523,-10.7998 -65.476,-27.2876l-33.573,-30.8334c-32.937,-30.24861 -81.523,-36.05576 -120.66,-14.4217l-169.05,93.446c-37.144,20.532 -83.038,16.433 -115.957,-10.3549l-38.309,-31.175c-33.305,-27.1033 -79.844,-30.9509 -117.1482,-9.6854l-86.63742,49.3883" />
+								<path class="line-black line-black-3" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m1139.13582,361.92141l-181.348,-25.206c-48.634,-6.76 -85.914,-46.613 -89.417,-95.589l-1.095,-15.31c-3.76,-52.557 -46.231,-93.9974 -98.864,-96.4656l-28.737,-1.3477c-24.349,-1.1418 -47.523,-10.7998 -65.476,-27.2876l-33.573,-30.8334c-32.937,-30.24861 -81.523,-36.05576 -120.66,-14.4217l-169.05,93.446c-37.144,20.532 -83.038,16.433 -115.957,-10.3549l-38.309,-31.175c-33.305,-27.1033 -79.844,-30.9509 -117.1482,-9.6854l-86.63742,49.3883" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__products products">
+				<div class="products__container">
+					<div class="products__top">
+						<h2 data-watch="title" class="products__title title">New Our <span class="title-span">Products</span>
+						</h2>
+						<div data-watch="counter" class="products__text text">Have time to buy the most harmonious drinks in
+							the new Starbucks coffee and don't forget about the discount! Starbucks coffee and don't forget
+							about the discount!</div>
+					</div>
+					<div class="products__bottom">
+						<div class="products__slider swiper">
+							<div class="products__wrapper swiper-wrapper">
+								<div class="products__slide swiper-slide">
+									<div class="swiper-slide__top">
+										<div class="swiper-slide__img-ibg">
+											<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.png" alt="cup"></picture>
+										</div>
+									</div>
+									<div class="swiper-slide__subtitle">Fast</div>
+									<div class="swiper-slide__text text">Our cafe will serve you quickly</div>
+									<div class="swiper-slide__value">
+										<div class="swiper-slide__price">7,45$</div>
+										<div class="swiper-slide__volume text">330 ml</div>
+									</div>
+									<button class="swiper-slide__button button button-green"><span>Buy Product</span></button>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="swiper-slide__top">
+										<div class="swiper-slide__img-ibg">
+											<picture><source srcset="img/products/02.webp" type="image/webp"><img src="img/products/02.png" alt="cup"></picture>
+										</div>
+									</div>
+									<div class="swiper-slide__subtitle">Fast</div>
+									<div class="swiper-slide__text text">Our cafe will serve you quickly</div>
+									<div class="swiper-slide__value">
+										<div class="swiper-slide__price">7,45$</div>
+										<div class="swiper-slide__volume text">330 ml</div>
+									</div>
+									<button class="swiper-slide__button button button-green"><span>Buy Product</span></button>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="swiper-slide__top">
+										<div class="swiper-slide__img-ibg">
+											<picture><source srcset="img/products/03.webp" type="image/webp"><img src="img/products/03.png" alt="cup"></picture>
+										</div>
+									</div>
+									<div class="swiper-slide__subtitle">Cappuccino</div>
+									<div class="swiper-slide__text text">Our cafe will serve you quickly</div>
+									<div class="swiper-slide__value">
+										<div class="swiper-slide__price">7,45$</div>
+										<div class="swiper-slide__volume text">330 ml</div>
+									</div>
+									<button class="swiper-slide__button button button-green"><span>Buy Product</span></button>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="swiper-slide__top">
+										<div class="swiper-slide__img-ibg">
+											<picture><source srcset="img/products/02.webp" type="image/webp"><img src="img/products/02.png" alt="cup"></picture>
+										</div>
+									</div>
+									<div class="swiper-slide__subtitle">Fast</div>
+									<div class="swiper-slide__text text">Our cafe will serve you quickly</div>
+									<div class="swiper-slide__value">
+										<div class="swiper-slide__price">7,45$</div>
+										<div class="swiper-slide__volume text">330 ml</div>
+									</div>
+									<button class="swiper-slide__button button button-green"><span>Buy Product</span></button>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="swiper-slide__top">
+										<div class="swiper-slide__img-ibg">
+											<picture><source srcset="img/products/03.webp" type="image/webp"><img src="img/products/03.png" alt="cup"></picture>
+										</div>
+									</div>
+									<div class="swiper-slide__subtitle">Cappuccino</div>
+									<div class="swiper-slide__text text">Our cafe will serve you quickly</div>
+									<div class="swiper-slide__value">
+										<div class="swiper-slide__price">7,45$</div>
+										<div class="swiper-slide__volume text">330 ml</div>
+									</div>
+									<button class="swiper-slide__button button button-green"><span>Buy Product</span></button>
+								</div>
+							</div>
+						</div>
+						<button class="swiper-button-next button"> <span class="_icon-Arrow"> </span></button>
+					</div>
+				</div>
+			</section>
+			<section class="page__events events">
+				<div class="events__container">
+					<div class="events__top">
+						<div data-watch="counter" class="events__text text">Only in 2021 we have made more than 100,000 orders
+							for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</div>
+						<h2 data-watch="title" class="events__title title">Our New <span class="title-span">Events</span></h2>
+					</div>
+					<div class="events__bottom">
+						<div class="events__slider swiper">
+							<div class="events__wrapper swiper-wrapper">
+								<div class="events__slide swiper-slide">
+									<div class="swiper-slide__img-ibg">
+										<picture><source srcset="img/events/01.webp" type="image/webp"><img src="img/events/01.png" alt="img"></picture>
+									</div>
+									<div class="swiper-slide__title">TWO COFFEE FOR 1 PRICE</div>
+									<div class="swiper-slide__button button button-green"><span>More</span></div>
+								</div>
+								<div class="events__slide swiper-slide">
+									<div class="swiper-slide__img-ibg">
+										<picture><source srcset="img/events/02.webp" type="image/webp"><img src="img/events/02.png" alt="img"></picture>
+									</div>
+									<div class="swiper-slide__title">KITCHEN TOUR</div>
+									<div class="swiper-slide__button button button-green"><span>More</span></div>
+								</div>
+								<div class="events__slide swiper-slide">
+									<div class="swiper-slide__img-ibg">
+										<picture><source srcset="img/events/01.webp" type="image/webp"><img src="img/events/01.png" alt="img"></picture>
+									</div>
+									<div class="swiper-slide__title">TWO COFFEE FOR 1 PRICE</div>
+									<div class="swiper-slide__button button button-green"><span>More</span></div>
+								</div>
+								<div class="events__slide swiper-slide">
+									<div class="swiper-slide__img-ibg">
+										<picture><source srcset="img/events/02.webp" type="image/webp"><img src="img/events/02.png" alt="img"></picture>
+									</div>
+									<div class="swiper-slide__title">KITCHEN TOUR</div>
+									<div class="swiper-slide__button button button-green"><span>More</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="events__slider-1 swiper">
+							<div class="events__wrapper-1 swiper-wrapper">
+								<div class="events__slide-1 swiper-slide">
+									<div class="swiper-slide__img-ibg">
+										<picture><source srcset="img/events/03.webp" type="image/webp"><img src="img/events/03.png" alt="img"></picture>
+									</div>
+									<div class="swiper-slide__title">FREE COFFEE FOR 3 COFFEE</div>
+									<div class="swiper-slide__button button button-green"><span>More</span></div>
+								</div>
+								<div class="events__slide-1 swiper-slide">
+									<div class="swiper-slide__img-ibg">
+										<picture><source srcset="img/events/04.webp" type="image/webp"><img src="img/events/04.png" alt="img"></picture>
+									</div>
+									<div class="swiper-slide__title">OUR INSTAGRAM</div>
+									<div class="swiper-slide__button button button-green"><span>More</span></div>
+								</div>
+								<div class="events__slide-1 swiper-slide">
+									<div class="swiper-slide__img-ibg">
+										<picture><source srcset="img/events/05.webp" type="image/webp"><img src="img/events/05.png" alt="img"></picture>
+									</div>
+									<div class="swiper-slide__title">WHERE ARE YOU CHOOSE US?</div>
+									<div class="swiper-slide__button button button-green"><span>More</span></div>
+								</div>
+								<div class="events__slide-1 swiper-slide">
+									<div class="swiper-slide__img-ibg">
+										<picture><source srcset="img/events/03.webp" type="image/webp"><img src="img/events/03.png" alt="img"></picture>
+									</div>
+									<div class="swiper-slide__title">FREE COFFEE FOR 3 COFFEE</div>
+									<div class="swiper-slide__button button button-green"><span>More</span></div>
+								</div>
+							</div>
+						</div>
+						<button class="swiper-button-prev button"> <span class="_icon-Arrow"> </span></button>
+					</div>
+					<div class="events__lines lines">
+						<div class="events__line line ">
+							<svg width="475" height="254">
+								<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m-195.243,17.4986l98.6132,-14.85363c42.461,-6.3957 84.4872,13.96213 105.78977,51.24533l24.50293,42.8843c21.0551,36.8504 62.3897,57.2094 104.4371,51.4404l191.365,-26.258c44.304,-6.079 87.533,16.845 107.359,56.929l36.934,74.678" />
+								<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m-201.90049,33.17616l98.6132,-14.85363c42.461,-6.3957 84.4872,13.96213 105.78977,51.24533l24.50293,42.8843c21.0551,36.8504 62.3897,57.2094 104.4371,51.4404l191.365,-26.258c44.304,-6.079 87.533,16.845 107.359,56.929l36.934,74.678" />
+								<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m-210.90049,49.17616l98.6132,-14.85363c42.461,-6.3957 84.4872,13.96213 105.78977,51.24533l24.50293,42.8843c21.0551,36.8504 62.3897,57.2094 104.4371,51.4404l191.365,-26.258c44.304,-6.079 87.533,16.845 107.359,56.929l36.934,74.678" />
+							</svg>
+							<svg width="475" height="254">
+								<path class="line-black line-black-1" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m-195.243,17.4986l98.6132,-14.85363c42.461,-6.3957 84.4872,13.96213 105.78977,51.24533l24.50293,42.8843c21.0551,36.8504 62.3897,57.2094 104.4371,51.4404l191.365,-26.258c44.304,-6.079 87.533,16.845 107.359,56.929l36.934,74.678" />
+								<path class="line-black line-black-2" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m-201.90049,33.17616l98.6132,-14.85363c42.461,-6.3957 84.4872,13.96213 105.78977,51.24533l24.50293,42.8843c21.0551,36.8504 62.3897,57.2094 104.4371,51.4404l191.365,-26.258c44.304,-6.079 87.533,16.845 107.359,56.929l36.934,74.678" />
+								<path class="line-black line-black-3" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m-210.90049,49.17616l98.6132,-14.85363c42.461,-6.3957 84.4872,13.96213 105.78977,51.24533l24.50293,42.8843c21.0551,36.8504 62.3897,57.2094 104.4371,51.4404l191.365,-26.258c44.304,-6.079 87.533,16.845 107.359,56.929l36.934,74.678" />
+							</svg>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__contact contact">
+				<div class="contact__container">
+					<div class="contact__left">
+						<h2 data-watch="title" class="contact__title title">Our <span class="title-span">Contacts</span>
+						</h2>
+						<div data-watch="counter" class="contact__text text">Have time to buy the most harmonious drinks in
+							the new Starbucks coffee and don't forget about the discount!</div>
+						<div class="contact__contacts">
+							<a data-watch="counter" class="_icon-instagram" href="#">@supercoffee</a>
+							<a data-watch="counter" class="_icon-phone" href="tel: +7-999-999-99-99">+7-999-999-99-99</a>
+						</div>
+					</div>
+					<div class="contact__right">
+						<div data-watch="star" class="contact__img-ibg">
+							<picture><source srcset="img/contact/01.webp" type="image/webp"><img src="img/contact/01.png" alt="img"></picture>
+						</div>
+						<div data-watch-threshold="0.5" data-watch="star" class="contact__star star">
+							<div class="star__box box">
+								<img src="img/star.svg" alt="star">
+							</div>
+							<span class="star__text">we have</span>
+						</div>
+					</div>
+				</div>
+				<div class="contact__lines lines">
+					<div class="contact__line line ">
+						<svg width="990" height="366">
+							<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m0.94123,365.156l178.78177,-39.476c47.946,-10.587 81.956,-53.265 81.573,-102.365l-0.12,-15.348c-0.41,-52.689 38.648,-97.361 90.921,-103.986l28.541,-3.617c24.182,-3.0649 46.519,-14.5263 63.111,-32.3829l31.028,-33.3933c30.44,-32.75985 78.414,-42.39318 119.141,-23.9237l175.914,79.7764c38.652,17.5285 84.078,9.8115 114.773,-19.4972l35.723,-34.1084c31.056,-29.65358 77.144,-37.17153 116.012,-18.9244l90.28,42.3779" />
+							<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m9.96063,401.69021l178.78177,-39.476c47.946,-10.587 81.956,-53.265 81.573,-102.365l-0.12,-15.348c-0.41,-52.689 38.648,-97.361 90.921,-103.986l28.541,-3.617c24.182,-3.0649 46.519,-14.5263 63.111,-32.3829l31.028,-33.3933c30.44,-32.75985 78.414,-42.39318 119.141,-23.9237l175.914,79.7764c38.652,17.5285 84.078,9.8115 114.773,-19.4972l35.723,-34.1084c31.056,-29.65358 77.144,-37.17153 116.012,-18.9244l90.28,42.3779" />
+							<path class="line-white" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="transparent" d="m27.96063,435.69021l178.78177,-39.476c47.946,-10.587 81.956,-53.265 81.573,-102.365l-0.12,-15.348c-0.41,-52.689 38.648,-97.361 90.921,-103.986l28.541,-3.617c24.182,-3.0649 46.519,-14.5263 63.111,-32.3829l31.028,-33.3933c30.44,-32.75985 78.414,-42.39318 119.141,-23.9237l175.914,79.7764c38.652,17.5285 84.078,9.8115 114.773,-19.4972l35.723,-34.1084c31.056,-29.65358 77.144,-37.17153 116.012,-18.9244l90.28,42.3779" />
+						</svg>
+						<svg width="990" height="366">
+							<path class="line-black line-black-1" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m0.94123,365.156l178.78177,-39.476c47.946,-10.587 81.956,-53.265 81.573,-102.365l-0.12,-15.348c-0.41,-52.689 38.648,-97.361 90.921,-103.986l28.541,-3.617c24.182,-3.0649 46.519,-14.5263 63.111,-32.3829l31.028,-33.3933c30.44,-32.75985 78.414,-42.39318 119.141,-23.9237l175.914,79.7764c38.652,17.5285 84.078,9.8115 114.773,-19.4972l35.723,-34.1084c31.056,-29.65358 77.144,-37.17153 116.012,-18.9244l90.28,42.3779" />
+							<path class="line-black line-black-2" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m9.96063,401.69021l178.78177,-39.476c47.946,-10.587 81.956,-53.265 81.573,-102.365l-0.12,-15.348c-0.41,-52.689 38.648,-97.361 90.921,-103.986l28.541,-3.617c24.182,-3.0649 46.519,-14.5263 63.111,-32.3829l31.028,-33.3933c30.44,-32.75985 78.414,-42.39318 119.141,-23.9237l175.914,79.7764c38.652,17.5285 84.078,9.8115 114.773,-19.4972l35.723,-34.1084c31.056,-29.65358 77.144,-37.17153 116.012,-18.9244l90.28,42.3779" />
+							<path class="line-black line-black-3" fill="transparent" stroke-linejoin="round" stroke-width="1.4" stroke="#D9D9D9" d="m27.96063,435.69021l178.78177,-39.476c47.946,-10.587 81.956,-53.265 81.573,-102.365l-0.12,-15.348c-0.41,-52.689 38.648,-97.361 90.921,-103.986l28.541,-3.617c24.182,-3.0649 46.519,-14.5263 63.111,-32.3829l31.028,-33.3933c30.44,-32.75985 78.414,-42.39318 119.141,-23.9237l175.914,79.7764c38.652,17.5285 84.078,9.8115 114.773,-19.4972l35.723,-34.1084c31.056,-29.65358 77.144,-37.17153 116.012,-18.9244l90.28,42.3779" />
+						</svg>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class='footer__menu menu-footer'>
+					<div class="menu-footer__logo">StarBucks</div>
+					<nav class='menu-footer__body'>
+						<ul class='menu-footer__list'>
+							<li class='menu-footer__item'>Main
+								<ul class='menu-footer__list-2'>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>Buy</a></li>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>More</a></li>
+								</ul>
+							</li>
+							<li class='menu-footer__item'>We make
+								<ul class='menu-footer__list-2'>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>Process</a></li>
+								</ul>
+							</li>
+							<li class='menu-footer__item'>Products
+								<ul class='menu-footer__list-2'>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>Cappuccino</a></li>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>Fast</a></li>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>Fast</a></li>
+								</ul>
+							</li>
+							<li class='menu-footer__item'>Events
+								<ul class='menu-footer__list-2'>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>Drinks</a></li>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>Eat</a></li>
+								</ul>
+							</li>
+							<li class='menu-footer__item'>Contacts
+								<ul class='menu-footer__list-2'>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>Instagram</a></li>
+									<li class="menu-footer__item-2"><a href='#' class='menu__link'>Number</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__bottom">
+					<a class="footer__phone" href="tel: +7-999-999-99-99">+7-999-999-99-99</a>
+					<a data-watch="counter" class="footer__insta _icon-instagram" href="#"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="video" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Close</button>
+				<div data-youtube-place class="popup__text">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230115131251"></script>
+</body>
+
+</html>
