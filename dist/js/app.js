@@ -3803,7 +3803,7 @@
                         let valueSpan = 0;
                         for (let i = 0, time = 0; i < element.children.length; i++) {
                             valueSpan += element.children[i].children.length;
-                            for (let j = 0; j < element.children[i].children.length; j++, time += .2) element.children[i].children[j].style = `\n\t\t\t\t\t\tanimation-delay: ${time}s;\n\t\t\t\t\t\t\t`;
+                            for (let j = 0; j < element.children[i].children.length; j++, time += .2) element.children[i].children[j].style = `\n\t\t\t\t\t\t\t\tanimation-delay: ${time}s;\n\t\t\t\t\t\t\t`;
                         }
                     }));
                 }
