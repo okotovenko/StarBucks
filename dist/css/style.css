@@ -2085,7 +2085,7 @@ button.button.animation {
 
 .events__lines {
   left: 0;
-  top: 5%;
+  top: 8%;
 }
 
 .swiper-slide {
@@ -2138,6 +2138,10 @@ button.button.animation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.contact__title {
+  width: 70%;
 }
 
 .contact__contacts {
@@ -3111,6 +3115,16 @@ button.button.animation {
   }
 }
 
+@media (max-width: 62.0625em) {
+  .delicion__title {
+    width: 70%;
+  }
+
+  .products__title {
+    width: 70%;
+  }
+}
+
 @media (max-width: 61.99875em) {
   .delicion__container {
     -webkit-box-orient: vertical;
@@ -3131,6 +3145,14 @@ button.button.animation {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+
+  .events__title {
+    width: 70%;
+  }
+
+  .events__lines {
+    top: 20%;
   }
 }
 
@@ -3388,10 +3410,6 @@ button.button.animation {
     width: 80%;
   }
 
-  .delicion__title {
-    width: 60%;
-  }
-
   .delicion__video {
     width: 70%;
   }
@@ -3401,11 +3419,19 @@ button.button.animation {
     left: -20%;
   }
 
+  .events__lines {
+    top: 15%;
+  }
+
   .contact__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+
+  .contact__title {
+    width: 50%;
   }
 
   .contact__right {
@@ -3462,13 +3488,21 @@ button.button.animation {
   }
 }
 
-@media (max-width: 31.25em) {
+@media (max-width: 33.125em) {
   .delicion__title {
     width: 100%;
   }
+}
 
+@media (max-width: 31.25em) {
   .delicion__video {
     width: 100%;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .events__lines {
+    top: 30%;
   }
 }
 
